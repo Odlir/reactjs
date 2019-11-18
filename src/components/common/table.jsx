@@ -8,11 +8,11 @@ export default class Table extends Component {
         return (
             <table className="table">
                 <TableHeader
-                    columns={this.columns}
+                    columns={columns}
                     onSort={onSort}
                     sortColumn={sortColumn} />
                 <TableBody
-                    columns={this.columns}
+                    columns={columns}
                     data={data} />
             </table>
         );
