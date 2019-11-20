@@ -30,6 +30,9 @@ class Navbar extends Component {
                     <NavLink className="nav-item nav-link active" to="/login">
                         Login
                     </NavLink>
+                    {/*<NavLink className="nav-item nav-link active" to="/register">
+                        Register
+                    </NavLink>*/}
                 </div>
             </nav>
         );
