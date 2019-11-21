@@ -1,9 +1,18 @@
 import http from './httpService';
+import { apiUrl } from '../config';
 
-const apiEndPoint = 'http://localhost:3900/api/movies';
+const apiEndPoint = apiUrl + '/movies';
 
 export function getMovies() {
     return http.get(apiEndPoint);
+}
+
+export function getMovie(movieId) {
+    return http.get(apiEndPoint + '/' + movieId);
+}
+
+export function saveMovie(movie) {
+    return http.post(apiEndPoint );
 }
 
 export function deleteMovie(movieId) {
