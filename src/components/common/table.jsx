@@ -5,6 +5,7 @@ import TableBody from './tableBody'
 export default class Table extends Component {
     render() {
         const { columns, sortColumn, onSort, data} = this.props;
+
         return (
             <table className="table">
                 <TableHeader
